@@ -2,6 +2,8 @@ import 'dart:convert';
 
 // Classes
 
+/// The `ExperienceModel` class represents an experience with various properties such as title,
+/// description, difficulty level, price, duration, image paths, and state ID.
 class ExperienceModel {
   ExperienceModel({
     required this.title,
@@ -38,6 +40,16 @@ class ExperienceModel {
   }
 }
 
+/// The function `toUpdateExperienceModel` takes a `Map` response and returns an `UpdateExperienceModel`
+/// object with the corresponding values from the response.
+/// 
+/// Args:
+///   response (Map<String, dynamic>): A map containing the response data from an API call. The keys in
+/// the map correspond to the field names in the response data, and the values are the corresponding
+/// values for each field.
+/// 
+/// Returns:
+///   an instance of the UpdateExperienceModel class.
 UpdateExperienceModel toUpdateExperienceModel(Map<String, dynamic> response) {
   return UpdateExperienceModel(
     id: response['id'],
@@ -53,6 +65,8 @@ UpdateExperienceModel toUpdateExperienceModel(Map<String, dynamic> response) {
   );
 }
 
+/// The `UpdateExperienceModel` class is a subclass of `ExperienceModel` that includes an additional
+/// `id` property.
 class UpdateExperienceModel extends ExperienceModel {
   UpdateExperienceModel({
     required String title,

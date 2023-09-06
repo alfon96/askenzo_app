@@ -1,5 +1,7 @@
 import 'package:ask_enzo_app/data/configurazione.dart';
 import 'package:ask_enzo_app/providers/navigation_service.dart';
+/// The PasswordRecoveryScreen class is a StatefulWidget in Dart that represents a screen for recovering
+/// a password.
 import 'package:ask_enzo_app/widgets/AppBar/app_bar.dart';
 import 'package:ask_enzo_app/widgets/Drawer/custom_drawer.dart';
 import 'package:ask_enzo_app/widgets/CardsAndButtons/custom_flat_button.dart';
@@ -9,6 +11,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 const double spacing = 10;
 const double btnHeight = 250;
 
+/// The `SelectProfileScreen` class is a Dart class that represents a screen for selecting a user
+/// profile, with options for a tourist or a host.
 class SelectProfileScreen extends ConsumerWidget {
   const SelectProfileScreen({super.key});
 

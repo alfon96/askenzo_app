@@ -7,6 +7,18 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:io';
 
+/// The `apiPostImage` function sends a POST request to upload an image file to a specified URL and
+/// returns the result.
+/// 
+/// Args:
+///   scaffoldMessenger (ScaffoldMessengerState): The `scaffoldMessenger` parameter is of type
+/// `ScaffoldMessengerState` and is used to display error messages or notifications on the screen. It is
+/// typically associated with a `ScaffoldMessenger` widget.
+///   imgPath (String): The `imgPath` parameter is a required string that represents the file path of
+/// the image that needs to be uploaded.
+/// 
+/// Returns:
+///   a `Future<String?>`.
 Future<String?> apiPostImage(ScaffoldMessengerState scaffoldMessenger,
     {required String imgPath}) async {
   try {
@@ -32,6 +44,19 @@ Future<String?> apiPostImage(ScaffoldMessengerState scaffoldMessenger,
   return null;
 }
 
+/// The function `apiUpdateImage` is a Dart function that sends a PATCH request to update an image file
+/// on a server and returns the result.
+/// 
+/// Args:
+///   scaffoldMessenger (ScaffoldMessengerState): A reference to the ScaffoldMessengerState, which is
+/// used to show snackbar messages.
+///   imgFile (File): The `imgFile` parameter is a required `File` object that represents the image file
+/// to be updated.
+///   oldImgPath (String): The `oldImgPath` parameter is a required String that represents the path of
+/// the old image file.
+/// 
+/// Returns:
+///   a `Future<String?>`.
 Future<String?> apiUpdateImage(ScaffoldMessengerState scaffoldMessenger,
     {required File imgFile, required String oldImgPath}) async {
   try {
@@ -57,6 +82,19 @@ Future<String?> apiUpdateImage(ScaffoldMessengerState scaffoldMessenger,
   return null;
 }
 
+/// The function `apiDeleteImage` is a Dart function that sends a DELETE request to a specified API
+/// endpoint to delete an image, and returns a boolean indicating whether the deletion was successful or
+/// not.
+/// 
+/// Args:
+///   scaffoldMessenger (ScaffoldMessengerState): The `scaffoldMessenger` parameter is of type
+/// `ScaffoldMessengerState` and is used to display snackbar messages or other notifications to the
+/// user. It is typically obtained from the `ScaffoldMessenger.of(context)` method.
+///   imgPath (String): The `imgPath` parameter is a required string that represents the path of the
+/// image file that needs to be deleted.
+/// 
+/// Returns:
+///   a `Future<bool>`.
 Future<bool> apiDeleteImage(ScaffoldMessengerState scaffoldMessenger,
     {required String imgPath}) async {
   try {

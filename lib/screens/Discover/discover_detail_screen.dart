@@ -24,6 +24,8 @@ class DiscoverDetailScreen extends ConsumerStatefulWidget {
       _DiscoverDetailScreenState();
 }
 
+/// The `_DiscoverDetailScreenState` class is responsible for building the UI of the
+/// DiscoverDetailScreen and handling user interactions.
 class _DiscoverDetailScreenState extends ConsumerState<DiscoverDetailScreen> {
   Widget makeSlider(List<String> videoUrls) {
     List<Widget> widgetList = [];

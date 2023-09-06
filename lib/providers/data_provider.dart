@@ -10,6 +10,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 // EXPERIENCE
 
+/// The `ExperienceNotifier` class is a state notifier that fetches experience data and updates its
+/// state accordingly.
 class ExperienceNotifier extends StateNotifier<List<UpdateExperienceModel>> {
   ExperienceNotifier() : super([]);
 
@@ -27,6 +29,10 @@ class ExperienceNotifier extends StateNotifier<List<UpdateExperienceModel>> {
   }
 }
 
+/// The code `final experienceProvider = StateNotifierProvider<ExperienceNotifier,
+/// List<UpdateExperienceModel>>((ref) {
+///   return ExperienceNotifier();
+/// });` is creating a provider called `experienceProvider` using the `StateNotifierProvider` class.
 final experienceProvider =
     StateNotifierProvider<ExperienceNotifier, List<UpdateExperienceModel>>(
         (ref) {
@@ -35,6 +41,8 @@ final experienceProvider =
 
 // DISCOVERY
 
+/// The `DiscoveryNotifier` class is a state notifier that fetches discovery data and updates its state
+/// accordingly.
 class DiscoveryNotifier extends StateNotifier<List<UpdateDiscoveryModel>> {
   DiscoveryNotifier() : super([]);
 
@@ -55,12 +63,18 @@ class DiscoveryNotifier extends StateNotifier<List<UpdateDiscoveryModel>> {
 
 //final String? userLocation = await getLocation();
 
+/// The code `final discoveryProvider = StateNotifierProvider<DiscoveryNotifier,
+/// List<UpdateDiscoveryModel>>((ref) {
+///   return DiscoveryNotifier();
+/// });` is creating a provider called `discoveryProvider` using the `StateNotifierProvider` class.
 final discoveryProvider =
     StateNotifierProvider<DiscoveryNotifier, List<UpdateDiscoveryModel>>((ref) {
   return DiscoveryNotifier();
 });
 
 // DISTANCE PROVIDER
+/// The `DistanceNotifier` class is a state notifier that fetches distance data and updates its state
+/// with the fetched data.
 class DistanceNotifier extends StateNotifier<Map<int, double>> {
   DistanceNotifier() : super({});
 
@@ -85,6 +99,9 @@ class DistanceNotifier extends StateNotifier<Map<int, double>> {
 
 //final String? userLocation = await getLocation();
 
+/// The code `final distanceProvider = StateNotifierProvider<DistanceNotifier, Map<int, double>>((ref) {
+///   return DistanceNotifier();
+/// });` is creating a provider called `distanceProvider` using the `StateNotifierProvider` class.
 final distanceProvider =
     StateNotifierProvider<DistanceNotifier, Map<int, double>>((ref) {
   return DistanceNotifier();
@@ -92,6 +109,8 @@ final distanceProvider =
 
 // POPUP
 
+/// The `PopupNotifier` class is a state notifier that fetches popup data and provides a method to
+/// retrieve a random popup text.
 class PopupNotifier extends StateNotifier<PopupModel?> {
   PopupNotifier() : super(null);
 
@@ -114,12 +133,17 @@ class PopupNotifier extends StateNotifier<PopupModel?> {
   }
 }
 
+/// The code `final popupProvider = StateNotifierProvider<PopupNotifier, PopupModel?>((ref) {
+///   return PopupNotifier();
+/// });` is creating a provider called `popupProvider` using the `StateNotifierProvider` class.
 final popupProvider = StateNotifierProvider<PopupNotifier, PopupModel?>((ref) {
   return PopupNotifier();
 });
 
 // CONNECTIVITY
 
+/// The `ConnectivityNotifier` class is a state notifier that checks the device's connectivity and
+/// updates its state accordingly.
 class ConnectivityNotifier extends StateNotifier<bool> {
   ConnectivityNotifier() : super(false);
 
@@ -133,6 +157,9 @@ class ConnectivityNotifier extends StateNotifier<bool> {
   }
 }
 
+/// The code `final connectivityProvider = StateNotifierProvider<ConnectivityNotifier, bool>((ref) {
+/// return ConnectivityNotifier(); });` is creating a provider called `connectivityProvider` using the
+/// `StateNotifierProvider` class.
 final connectivityProvider =
     StateNotifierProvider<ConnectivityNotifier, bool>((ref) {
   return ConnectivityNotifier();

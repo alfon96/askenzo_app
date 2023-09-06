@@ -1,20 +1,17 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Introduction
+
+Askenzo is an app designed to enhance the user experience in Brindisi by showcasing various experiences and discoveries in the area. It is developed using Flutter and leverages AWS RDS for its database requirements and AWS S3 for storage needs.
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+
+Clone the repository from Azure repos and you will be ready to go.
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+As Askenzo is a Flutter application, building and running the project is straightforward:
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Clone the repository.
+Navigate to the project directory.
+Run flutter pub get to fetch the dependencies.
+Run flutter run to start the app.
+You should now see the Askenzo app running on your preferred device or simulator.

@@ -1,5 +1,10 @@
 import 'dart:convert';
 
+/// The code is defining an enumeration called `ContentCategory` with four possible values: `video`,
+/// `food`, `monuments`, and `hotels`. This enumeration can be used to represent different categories of
+/// content in a program.
+/// The `DiscoveryModel` class represents a discovery with its title, description, image and video
+/// paths, coordinates, address, and other related information.
 class DiscoveryModel {
   DiscoveryModel({
     required this.title,
@@ -42,6 +47,15 @@ class DiscoveryModel {
   }
 }
 
+/// The function `toUpdateDiscoveryModel` takes a response map and returns an instance of
+/// `UpdateDiscoveryModel` with the extracted values from the response.
+/// 
+/// Args:
+///   response (Map<String, dynamic>): A map containing the response data from an API call. The keys in
+/// the map correspond to the field names in the response data.
+/// 
+/// Returns:
+///   an instance of the UpdateDiscoveryModel class.
 UpdateDiscoveryModel toUpdateDiscoveryModel(Map<String, dynamic> response) {
   String coordinateGPS = response['coordinate_gps'];
   List<String> coordinates = coordinateGPS.split(' ');
@@ -63,6 +77,8 @@ UpdateDiscoveryModel toUpdateDiscoveryModel(Map<String, dynamic> response) {
   );
 }
 
+/// The `UpdateDiscoveryModel` class is a subclass of `DiscoveryModel` that includes an additional `id`
+/// property.
 class UpdateDiscoveryModel extends DiscoveryModel {
   UpdateDiscoveryModel({
     required this.id,

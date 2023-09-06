@@ -17,6 +17,7 @@ class ElevatedButtonBackground extends StatelessWidget {
   });
 
   final double height;
+/// The DiscoverItemCard class is a stateful widget that displays information about a discovery item.
   final double width;
   final String backgroundImagePath;
   final String btnText;

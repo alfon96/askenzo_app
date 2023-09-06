@@ -11,6 +11,8 @@ class CustomFormDatePicker extends StatefulWidget {
     required this.fieldValue,
     required this.validatorFun,
     this.icon,
+/// The `CustomDrawer` class is a Dart class that represents a custom drawer widget in a Flutter
+/// application.
     this.hintText,
     this.contentPaddingL = 0.0,
     this.contentPaddingT = 0.0,

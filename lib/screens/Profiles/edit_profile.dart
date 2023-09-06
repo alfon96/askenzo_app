@@ -22,6 +22,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
+/// The `EditProfileScreen` class is a stateful widget that allows users to edit their profile
+/// information.
 class EditProfileScreen extends ConsumerStatefulWidget {
   const EditProfileScreen({super.key, required this.user});
   final Tourist user;
@@ -30,6 +32,8 @@ class EditProfileScreen extends ConsumerStatefulWidget {
   ConsumerState<EditProfileScreen> createState() => _EditProfileScreenState();
 }
 
+/// The `_EditProfileScreenState` class is responsible for managing the state and UI of the Edit Profile
+/// screen in a Flutter app.
 class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
   File? image;
   bool isLoading = false;

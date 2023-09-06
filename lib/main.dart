@@ -31,10 +31,14 @@ import 'package:ask_enzo_app/data/configurazione.dart';
 double globalScreenWidth = 0;
 double globalScreenHeight = 0;
 
+/// The `main` function in Dart initializes the app and sets up the navigation and theme for the
+/// `AskEnzo` widget.
 void main() async {
   runApp(const ProviderScope(child: AskEnzo()));
 }
 
+/// The `AskEnzo` class is a Dart class that builds a MaterialApp widget with various theme
+/// configurations and routes for different screens in an application.
 class AskEnzo extends ConsumerWidget {
   const AskEnzo({super.key});
   @override

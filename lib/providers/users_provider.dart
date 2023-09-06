@@ -7,11 +7,17 @@ import 'package:ask_enzo_app/models/tourist.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+/// The `enum UserStates` is defining an enumeration called `UserStates` with two possible values:
+/// `userData` and `likeList`. This enumeration is used to represent different states of the user in the
+/// application. It can be used to determine which data should be displayed or which actions should be
+/// performed based on the current state of the user.
 enum UserStates {
   userData,
   likeList,
 }
 
+/// The `UserProvider` class is a state notifier that handles user authentication, login, logout, and
+/// updating user data.
 class UserProvider extends StateNotifier<List> {
   UserProvider()
       : super([
@@ -95,10 +101,19 @@ class UserProvider extends StateNotifier<List> {
   }
 }
 
+/// The code `final userProvider = StateNotifierProvider<UserProvider, List>((ref) {
+///   return UserProvider();
+/// });` is creating a `StateNotifierProvider` named `userProvider`. This provider is responsible for
+/// managing the state of the user in the application. It takes two type parameters: `UserProvider` as
+/// the state notifier class and `List` as the type of state that will be managed.
 final userProvider = StateNotifierProvider<UserProvider, List>((ref) {
   return UserProvider();
 });
 
+/// The code `Tourist debugUser = Tourist(...)` is creating an instance of the `Tourist` class and
+/// assigning it to the variable `debugUser`. This instance represents a tourist user with specific
+/// properties such as email, image profile, name, surname, state ID, and telephone number. It is likely
+/// used for debugging or testing purposes.
 Tourist debugUser = Tourist(
     email: 'grizzo@gmail.com',
     imgProfile: 'null',

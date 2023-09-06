@@ -21,6 +21,7 @@ Map<String, Color> colorMap = <String, Color>{
   'formFieldInputColor': Colors.black,
 };
 
+/// The RegisterUserScreen class is a stateful widget that extends ConsumerStatefulWidget.
 class RegisterUserScreen extends ConsumerStatefulWidget {
   const RegisterUserScreen({super.key});
 
@@ -28,6 +29,8 @@ class RegisterUserScreen extends ConsumerStatefulWidget {
   ConsumerState<RegisterUserScreen> createState() => _RegisterScreenState();
 }
 
+/// The `_RegisterScreenState` class is responsible for managing the state and UI of the registration
+/// screen in a Flutter app.
 class _RegisterScreenState extends ConsumerState<RegisterUserScreen> {
   final _formKey = GlobalKey<FormState>();
   static const double spacingHeight = 20;

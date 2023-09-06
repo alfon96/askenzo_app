@@ -17,6 +17,7 @@ import 'package:flutter_profile_picture/flutter_profile_picture.dart';
 
 const double spacingHeight = 20.0;
 
+/// The UserHomeProfile class is a stateful widget that displays the profile of a tourist user.
 class UserHomeProfile extends ConsumerStatefulWidget {
   const UserHomeProfile({super.key, required this.user});
   final Tourist user;
@@ -25,6 +26,8 @@ class UserHomeProfile extends ConsumerStatefulWidget {
   ConsumerState<UserHomeProfile> createState() => _UserHomeProfileState();
 }
 
+/// The `_UserHomeProfileState` class is responsible for rendering the user's profile information and
+/// providing functionality for editing and deleting the profile.
 class _UserHomeProfileState extends ConsumerState<UserHomeProfile> {
   Future<Container> profileImgMaker() async {
     bool isDeviceOnline =

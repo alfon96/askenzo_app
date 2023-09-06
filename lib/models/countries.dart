@@ -1975,6 +1975,8 @@ const List<Country> countries = [
   ),
 ];
 
+/// The `Country` class represents a country with its name, flag, code, dial code, region code, minimum
+/// and maximum length of the country code.
 class Country {
   final String name;
   final String flag;

@@ -4,6 +4,11 @@ import 'package:geolocator/geolocator.dart';
 
 final GeolocatorPlatform _geolocatorPlatform = GeolocatorPlatform.instance;
 
+/// The function `handlePermission` checks if location services are enabled and requests permission to
+/// access the device's location if necessary.
+/// 
+/// Returns:
+///   The function `handlePermission()` returns a `Future<bool>`.
 Future<bool> handlePermission() async {
   bool serviceEnabled;
   LocationPermission permission;

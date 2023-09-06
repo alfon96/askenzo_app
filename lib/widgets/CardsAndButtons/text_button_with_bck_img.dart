@@ -2,6 +2,8 @@ import 'package:ask_enzo_app/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:ask_enzo_app/data/configurazione.dart';
 
+/// The `TextButtonBackground` class is a custom widget in Dart that represents a text button with a
+/// background image, customizable properties, and a callback function.
 class TextButtonBackground extends StatelessWidget {
   const TextButtonBackground({
     super.key,

@@ -1,5 +1,9 @@
 import 'package:ask_enzo_app/data/configurazione.dart';
 import 'package:flutter/material.dart';
+/// The `CustomWaitingWidget` class is a stateless widget that displays a child widget and a circular
+/// progress indicator based on the value of the `isWaiting` property.
+/// The `CustomText` class is a customizable text widget in Dart that allows for various styling options
+/// such as font size, color, alignment, and padding.
 
 class CustomText extends StatelessWidget {
   const CustomText({

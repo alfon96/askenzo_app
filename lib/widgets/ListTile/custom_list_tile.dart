@@ -3,6 +3,7 @@ import 'package:ask_enzo_app/models/tourist.dart';
 import 'package:ask_enzo_app/providers/navigation_service.dart';
 
 import 'package:ask_enzo_app/widgets/custom_text.dart';
+/// The `CustomImageListTile` class is a custom widget that displays an image and text in a ListTile.
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

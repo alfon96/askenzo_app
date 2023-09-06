@@ -13,6 +13,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+/// The `DeleteProfile` class is a Dart widget that displays a screen for deleting a user's account,
+/// including a password input field and a button to confirm the deletion.
 class DeleteProfile extends ConsumerWidget {
   const DeleteProfile({super.key});
 

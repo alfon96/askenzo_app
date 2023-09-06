@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ask_enzo_app/providers/generic_provider.dart';
 
+/// The RecuperoPassword class is a stateful widget that extends ConsumerStatefulWidget in Dart.
 class RecuperoPassword extends ConsumerStatefulWidget {
   const RecuperoPassword({super.key});
 
@@ -17,6 +18,11 @@ class RecuperoPassword extends ConsumerStatefulWidget {
   ConsumerState<RecuperoPassword> createState() => _RecuperoPasswordState();
 }
 
+/// The `itemMap` is a map that associates a `Widget` (specifically a `CustomImageListTile`) with an
+/// `int` value. Each `CustomImageListTile` represents a language option with an image, width, and text.
+/// The `int` value represents the language code or identifier for that language option. This map is
+/// used in the `CustomDropDownButton` widget to display the language options and handle the selection
+/// of a language.
 class _RecuperoPasswordState extends ConsumerState<RecuperoPassword> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   TextEditingController inputEmail = TextEditingController();

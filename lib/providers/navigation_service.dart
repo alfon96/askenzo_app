@@ -5,6 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
 List<String> routeNames = [];
+/// The `NavigationState` class represents the state of a navigation system, including the current route
+/// and optional arguments.
 
 class NavigationState {
   String currentRoute;
@@ -12,6 +14,8 @@ class NavigationState {
   NavigationState(this.currentRoute, this.arguments);
 }
 
+/// The `NavigationNotifier` class is a state notifier that manages the navigation state and provides
+/// methods for pushing, replacing, and popping routes in Flutter.
 class NavigationNotifier extends StateNotifier<NavigationState> {
   final GlobalKey<NavigatorState> navigatorKey;
 
@@ -107,6 +111,9 @@ class NavigationNotifier extends StateNotifier<NavigationState> {
   }
 }
 
+/// The code `final navigationProvider = StateNotifierProvider<NavigationNotifier,
+/// NavigationState>((ref) => NavigationNotifier());` is creating a provider called `navigationProvider`
+/// using the `StateNotifierProvider` class from the `flutter_riverpod` package.
 final navigationProvider =
     StateNotifierProvider<NavigationNotifier, NavigationState>(
         (ref) => NavigationNotifier());

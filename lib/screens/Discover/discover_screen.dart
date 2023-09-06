@@ -14,6 +14,7 @@ import 'package:ask_enzo_app/models/data.dart';
 import 'package:ask_enzo_app/providers/generic_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+/// The DiscoverScreen class is a stateful widget that displays content based on a selected category.
 class DiscoverScreen extends ConsumerStatefulWidget {
   const DiscoverScreen({
     super.key,
@@ -26,6 +27,8 @@ class DiscoverScreen extends ConsumerStatefulWidget {
   ConsumerState<DiscoverScreen> createState() => _DiscoverScreenState();
 }
 
+/// The `_DiscoverScreenState` class is responsible for building the UI of the DiscoverScreen widget,
+/// including the app bar, end drawer, and a list of discovery items fetched from the server.
 class _DiscoverScreenState extends ConsumerState<DiscoverScreen> {
   String getTitle(Languages languageApp) {
     int index = LingueDiscovery.discoveryScreen[Languages.english]!

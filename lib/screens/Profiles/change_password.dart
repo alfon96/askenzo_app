@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+/// The `ChangePasswordScreen` class is a stateful widget that allows a user to change their password.
 class ChangePasswordScreen extends ConsumerStatefulWidget {
   const ChangePasswordScreen({super.key, required this.user});
   final Tourist user;
@@ -22,6 +23,8 @@ class ChangePasswordScreen extends ConsumerStatefulWidget {
       _EditProfileScreenState();
 }
 
+/// The `_EditProfileScreenState` class is responsible for rendering the change password screen and
+/// handling the logic for updating the user's password.
 class _EditProfileScreenState extends ConsumerState<ChangePasswordScreen> {
   final _formKey = GlobalKey<FormState>();
 

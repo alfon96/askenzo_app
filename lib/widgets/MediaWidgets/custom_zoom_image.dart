@@ -1,5 +1,7 @@
 import 'package:ask_enzo_app/widgets/MediaWidgets/profile_image.dart';
 import 'package:flutter/material.dart';
+/// The `CustomCachedNetworkImage` class is a widget that displays an image from a network URL with a
+/// placeholder and error widget.
 
 class CustomZoomProfileImage extends StatelessWidget {
   const CustomZoomProfileImage({

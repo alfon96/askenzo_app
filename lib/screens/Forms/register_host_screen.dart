@@ -18,6 +18,7 @@ import 'package:ask_enzo_app/providers/generic_provider.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'dart:async';
+/// The RegisterHostScreen class is a stateful widget that extends ConsumerStatefulWidget.
 
 class RegisterHostScreen extends ConsumerStatefulWidget {
   const RegisterHostScreen({super.key});
@@ -26,6 +27,8 @@ class RegisterHostScreen extends ConsumerStatefulWidget {
   ConsumerState<RegisterHostScreen> createState() => _RegisterHostScreenState();
 }
 
+/// The `_RegisterHostScreenState` class is a stateful widget that represents the screen for registering
+/// a host.
 class _RegisterHostScreenState extends ConsumerState<RegisterHostScreen> {
   final _formKey = GlobalKey<FormState>();
   static const double spacingHeight = 15;

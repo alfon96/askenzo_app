@@ -1,6 +1,9 @@
 import 'package:ask_enzo_app/data/configurazione.dart';
 import 'package:flutter/material.dart';
 
+/// The `CustomElevatedButton` class is a custom widget in Dart that extends `StatelessWidget` and
+/// creates an elevated button with customizable properties such as title, function, font size, padding,
+/// and background color.
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton({
     super.key,

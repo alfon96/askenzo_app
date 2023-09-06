@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-// Queste variaili servono per fare in modo di ritornare alla pagina precedente a quella del login,
-// esse sarebbero state delle variabili osservate tramite provider, però questa architettura avrebbe fatto aggiornare le pagine
-// prima di effettuare la navigazione.
-
+/// The code snippet is defining a set of route names as constants. These route names are used for
+/// navigation within the Flutter application. Each route name corresponds to a specific screen or page
+/// in the application. For example, the `homeRoute` represents the home screen, the `loginRoute`
+/// represents the login screen, and so on.
 var kColorScheme =
     ColorScheme.fromSeed(seedColor: Configurazione.colorePrimario);
 
@@ -41,6 +41,9 @@ const String deleteAccountRoute = '/DeleteProfile';
 const String userHomeRoute = '/userHomeScreen';
 
 // CONFIGURAZIONE ASPETTO WIDGET //
+
+/// The Configurazione class contains static constants for various colors, font sizes, font weights, and
+/// API endpoints used in the application.
 class Configurazione {
   static const Color colorePrimario = Color.fromARGB(255, 37, 69, 90);
   static const Color coloreBackgroundPulsanti = Color.fromARGB(255, 37, 69, 90);

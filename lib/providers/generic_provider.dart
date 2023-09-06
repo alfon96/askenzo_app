@@ -3,11 +3,17 @@ import 'package:ask_enzo_app/data/lingue.dart';
 import 'package:ask_enzo_app/models/countries.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
+/// The `enum States` is defining an enumeration that represents the different states or choices that
+/// can be made in the application. In this case, it defines two states: `language` and `country`. These
+/// states are used to access specific elements in the state list of the `GenericProvider` class. By
+/// using an enum, it provides a more readable and type-safe way to access these elements.
 enum States {
   language,
   country,
 }
 
+/// The `GenericProvider` class is a state notifier that manages the language and country choices, and
+/// provides a method to check if the device is online.
 class GenericProvider extends StateNotifier<List> {
   GenericProvider()
       : super([
@@ -67,6 +73,9 @@ class GenericProvider extends StateNotifier<List> {
   }
 }
 
+/// The code `final genericProvider = StateNotifierProvider<GenericProvider, List>((ref) { return
+/// GenericProvider(); });` is creating a provider called `genericProvider` using the
+/// `StateNotifierProvider` class from the `flutter_riverpod` package.
 final genericProvider = StateNotifierProvider<GenericProvider, List>((ref) {
   return GenericProvider();
 });

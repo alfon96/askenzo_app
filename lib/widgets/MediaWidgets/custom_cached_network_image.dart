@@ -6,6 +6,8 @@ class CustomCachedNetworkImage extends StatelessWidget {
     super.key,
     required this.imgPath,
     this.heightCircularProgress = 20.0,
+/// The `FieldAccount` class is a `ConsumerWidget` that represents a clickable ListTile widget with a
+/// title, an icon, and optional text and color customization.
     this.widthCircularProgress = 20.0,
   });
   final String imgPath;

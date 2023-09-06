@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:ask_enzo_app/data/configurazione.dart';
 
 class CarouselWithIndicator extends StatefulWidget {
+/// The `ProfileImage` class is a widget that displays a profile image either from a URL or a local
+/// file, and handles the case when the image is not available.
   const CarouselWithIndicator({
     super.key,
     required this.imgList,

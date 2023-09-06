@@ -1,5 +1,8 @@
 import 'package:ask_enzo_app/widgets/MediaWidgets/custom_cached_network_image.dart';
 import 'package:flutter/material.dart';
+/// The `CustomFlatButton` class is a custom button widget in Dart that takes in various parameters such
+/// as button text, button function, button height, button URL, and border radius to create a stylized
+/// flat button with an image background.
 
 class CustomFlatButton extends StatelessWidget {
   const CustomFlatButton({

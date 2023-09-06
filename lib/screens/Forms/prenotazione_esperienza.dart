@@ -30,6 +30,7 @@ Map<Widget, int> itemMap = {
 
 const spaceBetweenFields = 20.0;
 
+/// The class FormPrenotazioniEsperienze is a stateful widget that extends ConsumerStatefulWidget.
 class FormPrenotazioniEsperienze extends ConsumerStatefulWidget {
   const FormPrenotazioniEsperienze({super.key});
 
@@ -38,6 +39,8 @@ class FormPrenotazioniEsperienze extends ConsumerStatefulWidget {
       _FormPrenotazioniEsperienzeState();
 }
 
+/// The `_FormPrenotazioniEsperienzeState` class is a stateful widget that represents a form for making
+/// reservations for experiences.
 class _FormPrenotazioniEsperienzeState
     extends ConsumerState<FormPrenotazioniEsperienze> {
   final _formKey = GlobalKey<FormState>();

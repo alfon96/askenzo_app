@@ -6,6 +6,8 @@ import 'package:ask_enzo_app/widgets/Drawer/custom_drawer_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:ask_enzo_app/data/lingue.dart';
+/// The `CustomDrawerButton` class is a Dart widget that represents a button in a custom drawer, with
+/// customizable properties such as page navigation, button name, icon, and additional functionality.
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ask_enzo_app/providers/generic_provider.dart';
 

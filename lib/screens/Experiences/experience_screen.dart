@@ -11,6 +11,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ask_enzo_app/providers/generic_provider.dart';
 import 'package:ask_enzo_app/data/lingue.dart';
 
+/// The `ExperiencesScreen` class is a widget that displays a list of experiences fetched from a server
+/// and allows the user to interact with them.
 class ExperiencesScreen extends ConsumerStatefulWidget {
   const ExperiencesScreen({super.key});
 
@@ -18,6 +20,8 @@ class ExperiencesScreen extends ConsumerStatefulWidget {
   ConsumerState<ExperiencesScreen> createState() => _ExperiencesScreenState();
 }
 
+/// The `_ExperiencesScreenState` class is responsible for building the UI of the ExperiencesScreen
+/// widget in a Flutter app, including fetching data from a server and displaying it in a ListView.
 class _ExperiencesScreenState extends ConsumerState<ExperiencesScreen> {
   @override
   Widget build(BuildContext context) {

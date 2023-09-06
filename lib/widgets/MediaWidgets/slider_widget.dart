@@ -2,6 +2,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:ask_enzo_app/data/configurazione.dart';
 
+/// The `CarouselWithIndicator` class is a stateful widget that displays a carousel of images with an
+/// indicator, and has an option to display a logo.
 class SliderWidgets extends StatefulWidget {
   const SliderWidgets({
     super.key,
@@ -14,8 +16,11 @@ class SliderWidgets extends StatefulWidget {
     return _SliderWidgetsState();
   }
 }
+/// The _SliderWidgetsState class is a stateful widget in Dart.
 
 class _SliderWidgetsState extends State<SliderWidgets> {
+/// The `_CarouselWithIndicatorState` class is a stateful widget that displays a carousel of images with
+/// indicators and a logo.
   int _current = 0;
   final CarouselController _controller = CarouselController();
 

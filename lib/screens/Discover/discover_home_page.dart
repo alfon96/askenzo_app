@@ -15,10 +15,13 @@ import 'package:ask_enzo_app/providers/generic_provider.dart';
 import 'package:ask_enzo_app/models/data.dart';
 
 final random = Random();
+/// The `DiscoverDetailScreen` class is a stateful widget that displays details of a discovery and
+/// updates the discovery model.
 
 const double btnHeight = 150;
 const double spacing = 20;
 
+/// The DiscoverHome class is a stateful widget that extends ConsumerStatefulWidget in Dart.
 class DiscoverHome extends ConsumerStatefulWidget {
   const DiscoverHome({super.key});
 
@@ -26,6 +29,8 @@ class DiscoverHome extends ConsumerStatefulWidget {
   ConsumerState<DiscoverHome> createState() => _DiscoverHomeState();
 }
 
+/// The `_DiscoverHomeState` class is a stateful widget that represents the home screen of a discovery
+/// app, displaying different categories of content and a popup widget.
 class _DiscoverHomeState extends ConsumerState<DiscoverHome> {
   bool showPopUp = true;
 
@@ -114,6 +119,7 @@ class _DiscoverHomeState extends ConsumerState<DiscoverHome> {
   }
 }
 
+/// The `FakePopUp` class is a widget that displays a fake pop-up with an image and text.
 class FakePopUp extends ConsumerWidget {
   const FakePopUp({super.key, required this.appLanguage});
   final Languages appLanguage;

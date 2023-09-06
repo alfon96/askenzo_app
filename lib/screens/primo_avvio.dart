@@ -9,6 +9,8 @@ import 'package:flutter/services.dart';
 import 'package:ask_enzo_app/shared/shared_functions.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+/// The `PrimoAvvio` class represents the initial screen of an app and displays a carousel of images, a
+/// welcome message, and a button to start exploring the app.
 class PrimoAvvio extends ConsumerWidget {
   const PrimoAvvio({super.key});
 

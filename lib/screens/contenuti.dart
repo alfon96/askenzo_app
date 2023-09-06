@@ -9,6 +9,7 @@ import 'package:ask_enzo_app/widgets/cardsandbuttons/text_button_with_bck_img.da
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ask_enzo_app/providers/generic_provider.dart';
 
+/// The class `ScreenContenuti` is a stateful widget that extends `ConsumerStatefulWidget` in Dart.
 class ScreenContenuti extends ConsumerStatefulWidget {
   const ScreenContenuti({super.key});
 
@@ -16,6 +17,8 @@ class ScreenContenuti extends ConsumerStatefulWidget {
   ConsumerState<ScreenContenuti> createState() => _ScreenContenutiState();
 }
 
+/// The `_ScreenContenutiState` class is a stateful widget that builds the UI for the `ScreenContenuti`
+/// screen, displaying different buttons and handling navigation based on user login status.
 class _ScreenContenutiState extends ConsumerState<ScreenContenuti> {
   @override
   Widget build(BuildContext context) {

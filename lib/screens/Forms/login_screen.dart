@@ -13,6 +13,9 @@ import 'package:ask_enzo_app/providers/generic_provider.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:async';
 
+/// The LoginScreen class is a stateful widget that extends ConsumerStatefulWidget in Dart.
+/// The _LoginScreenState class is a state class that extends the ConsumerState class for the
+/// LoginScreen widget.
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
 
@@ -20,6 +23,7 @@ class LoginScreen extends ConsumerStatefulWidget {
   ConsumerState<LoginScreen> createState() => _LoginScreenState();
 }
 
+/// The `_LoginScreenState` class represents the state of the login screen in a Dart application.
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   static const double spacingHeight = 10;

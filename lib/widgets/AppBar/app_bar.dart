@@ -4,6 +4,8 @@ import 'package:ask_enzo_app/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+/// The `CustomAppBar` class is a custom implementation of the `AppBar` widget in Flutter, with
+/// additional customization options such as title, transparency, and logo usage.
 class CustomAppBar extends ConsumerWidget implements PreferredSizeWidget {
   const CustomAppBar({
     super.key,

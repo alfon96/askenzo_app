@@ -1,6 +1,8 @@
 import 'package:ask_enzo_app/data/configurazione.dart';
 import 'package:ask_enzo_app/models/experience.dart';
 import 'package:ask_enzo_app/providers/navigation_service.dart';
+/// The `ElevatedButtonBackground` class is a stateless widget that displays a container with an
+/// elevated button and an image background.
 import 'package:ask_enzo_app/providers/users_provider.dart';
 import 'package:ask_enzo_app/shared/shared_functions.dart';
 import 'package:ask_enzo_app/widgets/MediaWidgets/custom_cached_network_image.dart';
@@ -16,6 +18,8 @@ const double heightCard = 180;
 const double heightImageBox = heightCard * .7;
 const double heightTextBox = heightCard * .3;
 
+/// The ExperienceItemCard class is a stateful widget that displays information about a specific
+/// experience.
 class ExperienceItemCard extends ConsumerStatefulWidget {
   const ExperienceItemCard({super.key, required this.experience});
   final UpdateExperienceModel experience;
@@ -24,6 +28,9 @@ class ExperienceItemCard extends ConsumerStatefulWidget {
   ConsumerState<ExperienceItemCard> createState() => _ExperienceItemCardState();
 }
 
+/// The `_ExperienceItemCardState` class is a stateful widget that represents a card displaying
+/// information about an experience item, including its title, difficulty, duration, and whether it is
+/// liked or not.
 class _ExperienceItemCardState extends ConsumerState<ExperienceItemCard> {
   String getTitle(Languages languageApp) {
     return widget.experience.title.capitalize();

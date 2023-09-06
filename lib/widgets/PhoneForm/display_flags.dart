@@ -11,6 +11,8 @@ class DisplayFlagsPhoneCode extends ConsumerStatefulWidget {
   ConsumerState<DisplayFlagsPhoneCode> createState() =>
       _DispalyFlagsPhoneCodeState();
 }
+/// The `_DisplayFlagsPhoneCodeState` class is a stateful widget that displays a dialog with a search
+/// bar and a list of flags, allowing the user to select a country flag.
 
 class _DispalyFlagsPhoneCodeState extends ConsumerState<DisplayFlagsPhoneCode> {
   List<Country> items = countries;
@@ -74,6 +76,7 @@ class _DispalyFlagsPhoneCodeState extends ConsumerState<DisplayFlagsPhoneCode> {
   }
 }
 
+/// The `Flag` class is a stateless widget that displays a flag image, country name, and dial code.
 class Flag extends StatelessWidget {
   const Flag({Key? key, required this.state}) : super(key: key);
   final Country state;

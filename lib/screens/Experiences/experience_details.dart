@@ -13,12 +13,25 @@ import 'package:ask_enzo_app/shared/shared_functions.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 
+/// The function returns a string indicating the accessibility duration of an experience, either as a
+/// free access or with a payment and includes the price and duration.
+/// 
+/// Args:
+///   exp (UpdateExperienceModel): The parameter `exp` is of type `UpdateExperienceModel`.
+/// 
+/// Returns:
+///   a string that indicates the accessibility duration of an experience. If the price of the
+/// experience is 0.0, it returns "Accesso gratuito \nDurata {duration}" where {duration} is the
+/// duration of the experience. Otherwise, it returns "A Pagamento \nQuota {price} - Durata {duration}"
+/// where {price} is the formatted price
 String getAccessibilityDurationString(UpdateExperienceModel exp) {
   return exp.price.values.first == 0.0
       ? 'Accesso gratuito \nDurata ${exp.duration}'
       : 'A Pagamento \nQuota ${formatPrice(exp.price)} - Durata ${exp.duration}';
 }
 
+/// The `ExperienceDetailScreen` class is a stateful widget that displays the details of a specific
+/// experience.
 class ExperienceDetailScreen extends ConsumerStatefulWidget {
   const ExperienceDetailScreen({super.key, required this.experience});
   final UpdateExperienceModel experience;
@@ -28,6 +41,8 @@ class ExperienceDetailScreen extends ConsumerStatefulWidget {
       _ExperienceDetailScreenState();
 }
 
+/// The `_ExperienceDetailScreenState` class is responsible for building the UI of the Experience Detail
+/// Screen in a Flutter app.
 class _ExperienceDetailScreenState
     extends ConsumerState<ExperienceDetailScreen> {
   @override

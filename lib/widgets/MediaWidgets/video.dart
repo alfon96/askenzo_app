@@ -3,7 +3,11 @@ import 'package:ask_enzo_app/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:pod_player/pod_player.dart';
 
+/// The `PlayVideoWidget` class is a stateful widget that represents a video player widget with a given
+/// URL.
 class PlayVideoWidget extends StatefulWidget {
+/// The `SliderWidgets` class is a stateful widget that represents a collection of widgets that can be
+/// displayed in a slider.
   const PlayVideoWidget({super.key, required this.url});
   final String url;
 
@@ -11,6 +15,8 @@ class PlayVideoWidget extends StatefulWidget {
   State<PlayVideoWidget> createState() => _PlayVideoWidgetState();
 }
 
+/// The `_PlayVideoWidgetState` class is a stateful widget that displays a video player using the
+/// `PodVideoPlayer` widget and handles the initialization and disposal of the `PodPlayerController`.
 class _PlayVideoWidgetState extends State<PlayVideoWidget> {
   late final PodPlayerController controller;
   @override

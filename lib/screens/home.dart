@@ -13,6 +13,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ask_enzo_app/providers/navigation_service.dart';
 
 bool kfirstRun = true;
+/// The `HomePage` class is a stateful widget that extends `ConsumerStatefulWidget` and has an optional
+/// `index` property.
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({
@@ -24,6 +26,8 @@ class HomePage extends ConsumerStatefulWidget {
   ConsumerState<HomePage> createState() => _HomePageState();
 }
 
+/// The `_HomePageState` class is a stateful widget that represents the home page of an app with a
+/// bottom navigation bar and different content based on the selected index.
 class _HomePageState extends ConsumerState<HomePage> {
   int _selectedIndex = 0;
 

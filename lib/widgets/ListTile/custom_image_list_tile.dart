@@ -6,6 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class CustomImageListTile extends ConsumerWidget {
   const CustomImageListTile({
     super.key,
+/// The `FieldAccount` class is a Dart widget that represents a clickable ListTile with a custom text
+/// and icon, used for navigating to different routes in an app.
     required this.imgPath,
     required this.width,
     required this.text,

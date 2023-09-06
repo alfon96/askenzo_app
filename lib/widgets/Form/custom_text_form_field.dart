@@ -1,6 +1,9 @@
 import 'package:ask_enzo_app/data/configurazione.dart';
 import 'package:flutter/material.dart';
 
+/// The `CustomTextFormField` class is a custom form field widget in Dart that allows for customization
+/// of various properties such as title, field value, validator function, obscure text, hint text, icon,
+/// keyboard type, and content padding.
 class CustomTextFormField extends StatefulWidget {
   const CustomTextFormField({
     super.key,
@@ -35,6 +38,8 @@ class CustomTextFormField extends StatefulWidget {
   State<CustomTextFormField> createState() => _CustomTextFormFieldState();
 }
 
+/// The `_CustomTextFormFieldState` class is a stateful widget that represents a custom text form field
+/// with an optional icon button and validation logic.
 class _CustomTextFormFieldState extends State<CustomTextFormField> {
   late bool obscuredField;
   Color iconColor = Colors.black54;

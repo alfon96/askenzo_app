@@ -1,6 +1,9 @@
 import 'package:ask_enzo_app/data/configurazione.dart';
 
 import 'package:ask_enzo_app/models/discovery.dart';
+/// The `CustomFlatButton` class is a custom button widget in Dart that takes in various parameters such
+/// as button text, height, function, URL, and border radius to create a stylized flat button with an
+/// image background.
 import 'package:ask_enzo_app/providers/data_provider.dart';
 import 'package:ask_enzo_app/providers/navigation_service.dart';
 import 'package:ask_enzo_app/widgets/MediaWidgets/custom_cached_network_image.dart';
@@ -22,6 +25,8 @@ class DiscoverItemCard extends ConsumerStatefulWidget {
   ConsumerState<DiscoverItemCard> createState() => _DiscoverItemCardState();
 }
 
+/// The `_DiscoverItemCardState` class is a stateful widget that represents a card displaying
+/// information about a discovery item, including its title and distance from the user.
 class _DiscoverItemCardState extends ConsumerState<DiscoverItemCard> {
   // String getCategoryName(ContentCategory cat, Languages languageApp) {
   //   return LingueDiscovery.discoveryDetails[languageApp]!;

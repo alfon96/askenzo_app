@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 
+/// The above code is defining an enumeration called "Languages" in Dart. It includes four language
+/// options: italiano, english, french, and deutsch.
 enum Languages {
   italiano,
   english,
   french,
   deutsch,
 }
-// Provider variable
-// Consumer
-// import 'package:flutter_riverpod/flutter_riverpod.dart';
-// import 'package:ask_enzo_app/providers/language_change.dart';
-// final languageApp = ref.watch(genericProvider)[0];
-// LingueDiscovery.discoveryScreen[languageApp]?[0],
 
+/// The class LingueValidazioneForm contains a map of validation messages in different languages.
 class LingueValidazioneForm {
   static const Map<Languages, List<String>> testoValidazione =
       <Languages, List<String>>{
@@ -47,6 +44,8 @@ class LingueValidazioneForm {
   };
 }
 
+/// The class LingueUsersProfiles contains a static constant map that stores different language versions
+/// of user profile settings.
 class LingueUsersProfiles {
   static const Map<Languages, List<String>> paginaSetup =
       <Languages, List<String>>{
@@ -97,6 +96,8 @@ class LingueUsersProfiles {
   };
 }
 
+/// The class LinguePasswordDimenticata contains a map of language-specific strings for a forgot
+/// password form.
 class LinguePasswordDimenticata {
   static const Map<Languages, List<String>> linguaCampiForm =
       <Languages, List<String>>{
@@ -135,6 +136,8 @@ class LinguePasswordDimenticata {
   };
 }
 
+/// The class LingueFormUserLogin contains static maps that store login phrases and form field labels in
+/// different languages.
 class LingueFormUserLogin {
   static const Map<Languages, String> linguaLogIn = <Languages, String>{
     Languages.italiano: 'Accedi',
@@ -184,6 +187,7 @@ class LingueFormUserLogin {
   };
 }
 
+/// The PhoneNumberZone class contains a map of research phrases in different languages.
 class PhoneNumberZone {
   static const Map<Languages, String> researchPhoneZone = {
     Languages.italiano: 'Cerca...',
@@ -193,6 +197,8 @@ class PhoneNumberZone {
   };
 }
 
+/// The class LingueFormRegistrazione contains static constants for different languages used in a
+/// registration form.
 class LingueFormRegistrazione {
   static const Map<Languages, String> linguaRequisitoPassword =
       <Languages, String>{
@@ -356,6 +362,8 @@ class LingueFormRegistrazione {
   };
 }
 
+/// The class LingueFormRegistrazioneHost contains static maps that store language-specific suggestions,
+/// titles, fields, and subtitles for a registration form.
 class LingueFormRegistrazioneHost {
   static const Map<Languages, List> linguaSuggerimentiForm = <Languages, List>{
     Languages.italiano: [
@@ -458,6 +466,8 @@ class LingueFormRegistrazioneHost {
   };
 }
 
+/// The class LingueFormPrenotazione contains static maps that store translations and other
+/// language-related data for a booking form in different languages.
 class LingueFormPrenotazione {
   static const Map<Languages, String> prenota = <Languages, String>{
     Languages.italiano: 'Prenota',
@@ -562,6 +572,7 @@ class LingueFormPrenotazione {
   };
 }
 
+/// The class LingueScreenContenuti contains a static map that stores content in different languages.
 class LingueScreenContenuti {
   static const Map<Languages, List> contenuti = <Languages, List>{
     Languages.italiano: ['Chiedi ad Enzo', 'Scopri Brindisi', 'Esperienze'],
@@ -571,6 +582,8 @@ class LingueScreenContenuti {
   };
 }
 
+/// The LingueDiscovery class contains static maps and lists for different languages related to
+/// discovering and exploring various aspects of a location.
 class LingueDiscovery {
   static const Map<Languages, String> linguaAppBar = <Languages, String>{
     Languages.italiano: 'Scopri',
@@ -622,6 +635,8 @@ class LingueDiscovery {
   };
 }
 
+/// The class LingueExperience contains static maps that store translations for different languages
+/// related to experiences and user routes.
 class LingueExperience {
   static const Map<Languages, String> linguaAppBar = <Languages, String>{
     Languages.italiano: 'Esperienze',
@@ -668,6 +683,8 @@ class LingueExperience {
   };
 }
 
+/// The LingueDrawer class in Dart contains static maps that store language options and messages for
+/// different languages.
 class LingueDrawer {
   static const Map<Languages, List<String>> opzioni = <Languages, List<String>>{
     Languages.italiano: [
@@ -739,6 +756,10 @@ class LingueDrawer {
   };
 }
 
+/// The above code is defining a constant map called "linguaDialogoUscitaApp" that maps each language to
+/// a corresponding exit message. The keys of the map are of type "Languages" and the values are of type
+/// "String". The exit messages are provided in different languages such as Italian, English, French,
+/// and German.
 const Map<Languages, String> linguaDialogoUscitaApp = <Languages, String>{
   Languages.italiano: 'Vuoi uscire dall\'applicazione?',
   Languages.english: 'Do you want to exit the application?',

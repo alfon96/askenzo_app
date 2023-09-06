@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+/// The `Host` class represents a host with properties such as id, email, imgProfile, name, and stateId,
+/// and provides methods to convert the object to JSON format.
 class Host {
   Host({
     this.id = 0,
@@ -26,6 +28,16 @@ class Host {
   }
 }
 
+/// The function `Host toHost` takes a response map and returns a `Host` object with the corresponding
+/// properties.
+/// 
+/// Args:
+///   response (Map<String, dynamic>): A map containing the response data from an API call. The keys in
+/// the map correspond to the field names in the response, and the values are the corresponding values
+/// for each field.
+/// 
+/// Returns:
+///   an instance of the `Host` class.
 Host toHost(Map<String, dynamic> response) {
   return Host(
     id: response['id'],
@@ -38,6 +50,8 @@ Host toHost(Map<String, dynamic> response) {
 
 // Host Register
 
+/// The `HostRegister` class is a subclass of `Host` that represents a host with additional properties
+/// for registration, including a password.
 class HostRegister extends Host {
   HostRegister({
     int id = 0,
@@ -66,6 +80,15 @@ class HostRegister extends Host {
       });
 }
 
+/// The function `toHostRegister` takes a response map and returns a `HostRegister` object with the
+/// values extracted from the map.
+/// 
+/// Args:
+///   response (Map<String, dynamic>): A map containing the response data from the host registration
+/// API. The keys in the map correspond to the field names in the response.
+/// 
+/// Returns:
+///   an instance of the HostRegister class.
 HostRegister toHostRegister(Map<String, dynamic> response) {
   return HostRegister(
     id: response['id'],
